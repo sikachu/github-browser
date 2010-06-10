@@ -1,2 +1,12 @@
-<h1>Public#index</h1>
-<p>Find me in app/views/public/index.html.erb</p>
+<h1>GitHub Browser</h1>
+<h2>What is this?</h2>
+<p>
+  Sometime, you want to browse the code for reference in the GitHub repository. You could clone the project and open in your Finder, or you may open lots of file into the tabs. Wouldn't it be better to be able to browse it in heiracical way?
+</p>
+<h2>Test it out!</h2>
+<p>
+  You can try browsing some of the repository here:
+</p>
+<ul>
+  <li><%= link_to "http://#{request.host}/rails/rails", browse_path("rails/rails") %></li>
+</ul>
