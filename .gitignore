@@ -1,0 +1,14 @@
+.DS_Store
+.com*
+log/*.log
+lib/**/*.xml
+lib/**/*.csv
+lib/**/*.txt
+lib/**/*.html
+lib/**/*.yml
+db/*.sqlite3
+config/database.yml
+*.tmproj
+public/system
+public/stylesheets/default.css
+rerun.txt
