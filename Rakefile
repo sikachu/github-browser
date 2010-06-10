@@ -7,4 +7,12 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
-require 'tasks/rails'
+begin
+  require 'tasks/rails'
+
+  # Running cucumber after spec
+  desc "Run all tests and features"
+  task :default => :cucumber
+rescue LoadError
+  # do nothing
+end
